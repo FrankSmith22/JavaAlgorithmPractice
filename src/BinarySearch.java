@@ -1,3 +1,10 @@
+/**
+ * Class Title: BinarySearch
+ * Date Created: April 1st, 2021
+ * Latest Edit: April 1st, 2021
+ * Author: Frank Smith
+ * Description: Accomplishes an integer search through a range of integers using the binary search algorithm
+ */
 public class BinarySearch {
 
     private int min;
