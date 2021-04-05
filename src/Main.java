@@ -23,12 +23,28 @@ public class Main {
         ArrayList<Integer> arr = new ArrayList<Integer>(Arrays.asList(5, 7, 20, 4, 19, 6, 2, 10));
         int sum = 24;
         ArrFindPairSum search = new ArrFindPairSum(arr, sum);
-        ArrayList<Integer> result = search.findFirst();
-        if(result == null){
+
+        // ArrayList<Integer> result = search.findFirst();
+        // if(result == null){
+        //     System.out.println("Sorry, that sum as a pair couldn't be found in the provided list of values!");
+        //     return;
+        // }
+        // System.out.println(result);
+        
+        ArrayList<int[]> results = search.find();
+        if(results.isEmpty()){
             System.out.println("Sorry, that sum as a pair couldn't be found in the provided list of values!");
             return;
         }
-        System.out.println(result);
-        
+        System.out.print("Results: ");
+        for (int i=0; i<results.size(); i++){
+            int[] tmp = results.get(i);
+
+            System.out.print("[ ");
+            for (int j=0; j<tmp.length; j++) {
+                 System.out.print(String.format("%d, ", tmp[j]));
+            }
+            System.out.print(" ]");
+        }
     }
 }
