@@ -4,15 +4,15 @@ import java.util.Arrays;
 /**
  * Class Title: Main
  * Date Created: April 1st, 2021
- * Latest Edit: April 5th, 2021
+ * Latest Edit: April 11th, 2021
  * Author: Frank Smith
  * Description: Entry point to application
  */
 public class Main {
     public static void main(String[] args) throws Exception {
         //testBinarySearch();
-
-        testArrFindPairSum();
+        //testArrFindPairSum();
+        testArrFindZeroSum();
     }
 
     public static void testBinarySearch(){
@@ -45,6 +45,17 @@ public class Main {
                  System.out.print(String.format("%d, ", tmp[j]));
             }
             System.out.print(" ]");
+        }
+    }
+    public static void testArrFindZeroSum(){
+        int[] arr = {5, 3, -6, -1, 4};
+        ArrFindZeroSum search = new ArrFindZeroSum(arr);
+        boolean found = search.find();
+        if(found){
+            System.out.println("Sub-array with a sum of zero found");
+        }
+        else {
+            System.out.println("Sub-array with a sum of zero NOT found");
         }
     }
 }

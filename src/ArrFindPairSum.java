@@ -4,10 +4,13 @@ import java.util.List;
 /**
  * Class Title: ArrFindPairSum
  * Date Created: April 4th, 2021
- * Latest Edit: April 5th, 2021
+ * Latest Edit: April 11th, 2021
  * Author: Frank Smith
  * Description: [pasted from techiedelight.com] Given an unsorted integer array, find a pair with the given sum in it
+ * Challenge Source: https://www.techiedelight.com/find-pair-with-given-sum-array/
  */
+
+// I was able to come up with the solution on my own, and the source refers to this solution as a brute-force solution
 
 public class ArrFindPairSum {
 
