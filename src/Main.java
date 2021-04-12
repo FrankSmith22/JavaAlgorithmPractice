@@ -12,7 +12,8 @@ public class Main {
     public static void main(String[] args) throws Exception {
         //testBinarySearch();
         //testArrFindPairSum();
-        testArrFindZeroSum();
+        //testArrFindZeroSum();
+        testArrPrintZeroSum();
     }
 
     public static void testBinarySearch(){
@@ -57,5 +58,12 @@ public class Main {
         else {
             System.out.println("Sub-array with a sum of zero NOT found");
         }
+    }
+    public static void testArrPrintZeroSum(){
+        int[] arr = {3, 4, -7, 3, 1, 3, 1, -4, -2, -2};
+        ArrPrintZeroSum search = new ArrPrintZeroSum(arr);
+        search.bruteForceFind();
+        System.out.println("\nokay, now for the multimap way\n");
+        search.multimapFind();
     }
 }
