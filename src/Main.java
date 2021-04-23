@@ -13,7 +13,8 @@ public class Main {
         //testBinarySearch();
         //testArrFindPairSum();
         //testArrFindZeroSum();
-        testArrPrintZeroSum();
+        //testArrPrintZeroSum();
+        testArrSortBinary();
     }
 
     public static void testBinarySearch(){
@@ -65,5 +66,16 @@ public class Main {
         search.bruteForceFind();
         System.out.println("\nokay, now for the multimap way\n");
         search.multimapFind();
+    }
+    public static void testArrSortBinary(){
+        int[] arr = {0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0};
+        ArrSortBinary sort = new ArrSortBinary(arr);
+        int[] sortedArr = sort.sortInPlace();
+
+        System.out.print("\n[");
+        for(int num : sortedArr){
+            System.out.print(String.format("%d,", num));
+        }
+        System.out.println("]");
     }
 }

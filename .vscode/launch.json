@@ -9,7 +9,21 @@
             "name": "Launch Main",
             "request": "launch",
             "mainClass": "Main",
-            "projectName": "JavaAlgorithmPractice_42c5fe25"
+            "projectName": "JavaAlgorithmPractice_5fe4df30"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "JavaAlgorithmPractice"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "JavaAlgorithmPractice"
         },
         {
             "type": "java",
