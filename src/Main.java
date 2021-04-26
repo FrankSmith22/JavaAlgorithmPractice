@@ -4,7 +4,7 @@ import java.util.Arrays;
 /**
  * Class Title: Main
  * Date Created: April 1st, 2021
- * Latest Edit: April 11th, 2021
+ * Latest Edit: April 25th, 2021
  * Author: Frank Smith
  * Description: Entry point to application
  */
@@ -14,7 +14,8 @@ public class Main {
         //testArrFindPairSum();
         //testArrFindZeroSum();
         //testArrPrintZeroSum();
-        testArrSortBinary();
+        //testArrSortBinary();
+        testArrFindDupElem();
     }
 
     public static void testBinarySearch(){
@@ -78,5 +79,17 @@ public class Main {
             System.out.print(String.format("%d,", num));
         }
         System.out.println("]");
+    }
+    public static void testArrFindDupElem(){
+        int[] arr = {1, 2, 3, 4, 2, 5, 6, 7};
+        ArrFindDupElem search = new ArrFindDupElem(arr);
+        //Integer result = search.find();
+        //Integer result = search.findWithSet();
+        Integer result = search.findInPlace();
+        if(result != null){
+            System.out.println("The duplicate element has been found: " + result);
+            return;
+        }
+        System.out.println("The duplicate element could not be found");
     }
 }
